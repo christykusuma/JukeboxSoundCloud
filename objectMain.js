@@ -174,7 +174,6 @@ Jukebox.prototype.play = function() {
 			});
 		});
 	}
-
 }
 
 // Stop song from Jukebox
@@ -212,6 +211,11 @@ Jukebox.prototype.backward = function() {
 		this.currentSong -= 1;
 		this.play();
 }
+
+// Update slider value - NOT DONE YET!
+Jukebox.prototype.updateSlider = function(slider) {
+  slider.value = this.songs[this.currentSong].player.currentTime() / this.songs[this.currentSong].duration;
+};
 
 // Convert playlist duration
 function convertDuration(dataDuration) {
@@ -260,6 +264,11 @@ document.addEventListener("DOMContentLoaded", function() {
 	dataDuration = data.duration;
 
 	const myJukebox = new Jukebox(playlistAPI, dataTitle, dataDuration);
+
+	// Set interval for updating slider value position
+	setInterval( function() {
+		myJukebox.updateSlider(seekSlider);
+	}, 2000);
 	});
 });
 
