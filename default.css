@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://necolas.github.io/normalize.css/3.0.2/normalize.css);
+
+body {
+    background-color: gray;
+    text-align: center;
+    margin: 70px auto;
+    width: 80%;
+    font: 14px normal 'Varela Round', Helvetica, serif;
+}
+
+h1 {
+    margin-top: 0;
+    width: 400px;
+    font-size: 2em;
+    color: black;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-top: 0;
+    width: 400px;
+    text-transform: uppercase;
+    margin-left: 65px;
+}
+
+h3 {
+    width: 400px;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #D5DDE4;
+}
+
+.seekSlider {
+    width: 370px;
+    margin-bottom: 10px;
+}
+
+.songDescription {
+    width: 350px;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 15px;
+    background-color: white;
+    position: absolute;
+    overflow: scroll;
+    max-height: 120px;
+    padding: 10px;
+
+}
+
+#myJukebox {
+    border-radius: 4px;
+    border: 1px solid #D5DDE4;
+    float: left;
+    background-color: #F5DBD3;
+    padding: 50px;
+    height: 735px;
+}
+
+#playlist {
+    border-radius: 4px;
+    border: 1px solid #D5DDE4;
+    float: left;
+    background-color: #BEA198;
+    padding: 10px;
+    padding-top: 50px;
+    padding-right: 50px;
+    width: 475px;
+    height: 775px;
+
+}
+
+.uploadPlaylist {
+    top: 30px;
+    left: 695px;
+    position: absolute;
+}
+
+.uploadSong {
+    top: 30px;
+    left: 185px;
+    position: absolute;
+}
+
+.upload {
+    margin-bottom: 25px;
+}
+
+img {
+    width: 330px;
+    height: 330px;
+    border: 3px solid black;
+}
+
+li {
+/*    list-style-type: none;*/
+    background-color: white;
+    text-align: left;
+    border: 2px solid black;
+    padding: 10px 10px;
+    background-color: white;
+    width: 400px;
+}
+
+li:hover {
+    background-color: #F5DBD3;
+}
+
+ol {
+    margin-top: 0;
+    text-align: center;
+    position: absolute;
+    overflow: scroll;
+    max-height: 670px;
+    border-style: solid;   
+    margin-left: 25px;
+    background-color: #F5DBD3;
+}
+
+.fa {
+    padding:10px 25px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    text-transform: uppercase;
+    
+}
+
+.fa:hover {
+    color: black;
+    background-color: #BEA198;
+}
+
