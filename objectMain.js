@@ -214,7 +214,7 @@ Jukebox.prototype.backward = function() {
 
 // Update slider value - NOT DONE YET!
 Jukebox.prototype.updateSlider = function(slider) {
-  slider.value = this.songs[this.currentSong].player.currentTime() / this.songs[this.currentSong].duration;
+  slider.value = (this.songs[this.currentSong].player.currentTime() / this.songs[this.currentSong].duration) * 100;
 };
 
 // Convert playlist duration
@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	// Set interval for updating slider value position
 	setInterval( function() {
 		myJukebox.updateSlider(seekSlider);
-	}, 2000);
+	}, 500);
 	});
 });
 
