@@ -1,7 +1,7 @@
 # SoundCloud Jukebox
 
 This app allows users to add any public SoundCloud playlist or song into the jukebox. Simply submit the link to a playlist or song from the SoundCloud website and you're good to go!<br><br>
-Feel free to play around with the <a target="_blank" href="http://christykusuma.com/soundcloud/">demo</a> or click the image to enlarge it. 
+Feel free to play around with the <a target="_blank" href="http://christykusuma.com/soundcloud/">demo</a>.
 
 ## Getting Started
 
